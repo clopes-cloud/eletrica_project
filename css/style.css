@@ -981,3 +981,48 @@ section {
         flex-direction: column;
     }
 }
+
+/* ==================================================
+   MENU RESPONSIVO (MOBILE)
+================================================== */
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--yellow, #f5c400);
+    font-size: 28px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block; /* Exibe o botão hambúrguer no telemóvel */
+    }
+
+    .navigation {
+        display: none; /* Esconde o menu padrão no telemóvel */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #111111;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        border-bottom: 2px solid var(--yellow, #f5c400);
+        z-index: 1000;
+    }
+
+    .navigation.active {
+        display: flex; /* Exibe o menu quando ativado pelo clique */
+    }
+
+    .navigation a {
+        padding: 12px 25px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #222;
+    }
+}
