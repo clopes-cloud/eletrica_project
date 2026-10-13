@@ -29,3 +29,20 @@ if (navMenu) {
         });
     });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navMenu = document.getElementById("navMenu");
+    const menuButton = document.querySelector(".mobile-menu-btn");
+
+    if (!navMenu) return;
+
+    navMenu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            navMenu.classList.remove("active");
+
+            if (menuButton) {
+                menuButton.setAttribute("aria-label", "Abrir Menu");
+            }
+        });
+    });
+});
