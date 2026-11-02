@@ -1017,3 +1017,25 @@ section {
         border-bottom: 1px solid #222;
     }
 }
+
+/* ==================================================
+   AJUSTES DE ESPAÇAMENTO - FORMAÇÃO
+================================================== */
+
+.training-subheader {
+    max-width: 900px;
+    margin: 25px auto 12px;
+    text-align: center;
+}
+
+.training-subheader h3 {
+    margin: 0;
+    color: var(--white);
+    font-size: 21px;
+}
+
+.training-subheader p {
+    margin: 8px 0 0;
+    color: #bbbbbb;
+    font-size: 15px;
+}
