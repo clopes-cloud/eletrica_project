@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eletrotechenergia.com.br/sitemap.xml
